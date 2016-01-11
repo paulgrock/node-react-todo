@@ -13,3 +13,5 @@ gulp.task('watch', () => {
 	], ['test']);
 	gulp.start('watchify');
 });
+
+gulp.task('build', ['browserify', 'sass'])
